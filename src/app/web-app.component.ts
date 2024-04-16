@@ -158,7 +158,7 @@ export class WebAppComponent implements OnInit {
       .subscribe(event => {
         let title = event['title'];
         if (!title) {
-          title = 'APP_NAME';
+          title = 'Aurigraph Fintech';
         }
         this.i18nService.translate(title).subscribe((titleTranslated: any) => {
           this.titleService.setTitle(titleTranslated);
